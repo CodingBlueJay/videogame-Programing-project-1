@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class driver : MonoBehaviour {
-    [SerializeField] float steerSpeed = 1f;
+    [SerializeField] float steerSpeed = 250f;
     [SerializeField] float moveSpeed = 20;
-    [SerializeFeild]  float slowSpeed = 15;
-    [SerializeFeild] float boostSpeed = 30f;
+    [SerializeField]  float slowSpeed = 15;
+    [SerializeField] float boostSpeed = 30f;
 
     void Start()
     {

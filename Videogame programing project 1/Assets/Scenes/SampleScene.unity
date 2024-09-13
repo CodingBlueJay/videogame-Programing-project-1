@@ -3746,7 +3746,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -10961,7 +10961,7 @@ GameObject:
   - component: {fileID: 1059613669}
   - component: {fileID: 1059613673}
   - component: {fileID: 1059613672}
-  - component: {fileID: 1059613671}
+  - component: {fileID: 1059613675}
   - component: {fileID: 1059613674}
   m_Layer: 0
   m_Name: Car
@@ -11039,20 +11039,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1059613671
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1059613668}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: baa21a1d0b996c8479fcb00e017d3636, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  steerSpeed: 275
-  moveSpeed: 18
 --- !u!61 &1059613672
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11140,11 +11126,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hasPackageColor:
     serializedVersion: 2
-    rgba: 4278255437
+    rgba: 4294939392
   noPackageColor:
     serializedVersion: 2
     rgba: 4294967295
   destroyDelayTime: 0.3
+--- !u!114 &1059613675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1059613668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baa21a1d0b996c8479fcb00e017d3636, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  steerSpeed: 250
+  moveSpeed: 20
+  slowSpeed: 15
+  boostSpeed: 30
 --- !u!1 &1073850114
 GameObject:
   m_ObjectHideFlags: 0
